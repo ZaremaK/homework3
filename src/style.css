@@ -1,0 +1,140 @@
+:root {
+    --main-color: #9e74e0;
+  
+    --border-radius: 1em;
+  }
+  
+  body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  @media (max-width: 767px) {
+		.carousel-inner .carousel-item > div {
+			display: none;
+		}
+		.carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+	}
+
+	.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
+	/* medium and up screens */
+	@media (min-width: 768px) {
+
+		.carousel-inner .carousel-item-end.active,
+		.carousel-inner .carousel-item-next {
+			transform: translateX(25%);
+		}
+
+		.carousel-inner .carousel-item-start.active, 
+		.carousel-inner .carousel-item-prev {
+			transform: translateX(-25%);
+		}
+	}
+
+	.carousel-inner .carousel-item-end,
+	.carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+	}
+
+  
+  h1 {
+    font-weight: 900;
+  
+    margin-bottom: 30px;
+  
+    font-size: 5vh;
+    line-height: 48px;
+  }
+  
+  h1 h2,
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #231d3c;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  .logo {
+    display: block;
+    margin: 30px auto;
+    width: 150px;
+  }
+  
+  #contact-me {
+    margin-top: 20px;
+  }
+  
+  .email:link {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    cursor: pointer;
+    color: var(--main-color);
+  }
+  
+  .email:hover {
+    font-size: 120%;
+    color: cornflowerblue;
+    text-decoration: underline;
+  }
+  
+  .navigation {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .buttons-link {
+    margin: 20px;
+    padding: 10px 20px;
+    border: 3px solid var(--main-color);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+  }
+  
+  #b-about {
+    color: white;
+    background-color: var(--main-color);
+  }
+  
+  #b-contact {
+    color: var(--main-color);
+  }
+  
+  .home-columns {
+    text-align: left;
+    padding: 60px;
+  }
+  
+  #image-home {
+    max-width: 100%;
+    padding: 50px;
+  }
+  .image-about {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 90%;
+  }
+  
+  .text-column {
+    margin: 20px;
+  }
+  
